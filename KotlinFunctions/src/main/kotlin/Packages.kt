@@ -1,2 +1,1 @@
-class Packages {
-}
+// package br.com.VitodLeo.pacotea
