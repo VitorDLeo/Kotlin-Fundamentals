@@ -7,7 +7,19 @@ fun obterMnemonica(cor: Cor) =
         Cor.ORANGE -> "Legal"
     }
 
+fun obterTemp(cor: Cor) : String {
+    return when(cor){
+        Cor.RED, Cor.ORANGE, Cor.YELLOW -> "Quente"
+        Cor.GREEN -> "Neutro"
+        Cor.BLUE -> "Frio"
+    }
+}
+
 fun main() {
     val mnemonica = obterMnemonica(Cor.RED)
     println(mnemonica)
+
+    val temp = obterTemp(Cor.GREEN)
+
+    println(temp)
 }
