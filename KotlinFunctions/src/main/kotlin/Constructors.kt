@@ -1,8 +1,13 @@
 
-class Casa2 {
+class Casa2( cor : String, vagasGaragem : Int ) {
 
-    var cor: String = ""
-    var vagasGaragem: Int = 0
+    var cor: String
+    var vagasGaragem: Int
+
+    init {
+        this.cor = cor
+        this.vagasGaragem = vagasGaragem
+    }
 
     fun detalhesCasa(){
         println("A casa tem a cor: $cor, vagas: $vagasGaragem")
@@ -24,9 +29,12 @@ class Casa2 {
 }
 
 fun main() {
-    val casa = Casa2()
-    casa.cor = "Vermelho"
-    casa.vagasGaragem = 2
+    val casa = Casa2("Amarelo", 3)
+    val casa3 = Casa2("Cinza", 10)
+    // casa.cor = "Vermelho"
+    // casa.vagasGaragem = 2
+    // casa.detalhesCasa()
 
     casa.detalhesCasa()
+    casa3.detalhesCasa()
 }
