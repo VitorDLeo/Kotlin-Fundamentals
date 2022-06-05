@@ -25,7 +25,10 @@ class Passaro : Animal() {
 fun main() {
 
     var cao = Cao()
+    cao.dormir()
+    cao.correr()
 
     var passaro = Passaro()
-
+    passaro.dormir()
+    passaro.correr()
 }
