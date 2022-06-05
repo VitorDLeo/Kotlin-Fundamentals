@@ -3,9 +3,19 @@ class Casa {
 
     var cor: String = ""
 
-    fun abrirJanela(){
-        println("Janela Aberta")
+    fun abrirJanela(qtdJanelas: Int){
+        println("Quantidade de janelas aberta: $qtdJanelas")
     }
+
+    fun abrirPorta(){
+        println("Porta aberta!!")
+    }
+
+    fun abrirCasa(){
+        // this.abrirJanela()
+        this.abrirPorta()
+    }
+
 }
 
 fun main() {
@@ -13,6 +23,8 @@ fun main() {
     val casa = Casa()
     casa.cor = "Vermelha"
 
-    println(casa.abrirJanela())
+    println(casa.abrirJanela(4))
+
+    println(casa.abrirCasa())
 
 }
