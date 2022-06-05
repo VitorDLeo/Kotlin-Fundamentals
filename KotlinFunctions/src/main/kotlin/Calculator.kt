@@ -40,16 +40,18 @@ fun main() {
 
     when (opt) {
         1 -> {
-            println(soma(a, b))
+            println("SOMA = ${soma(a, b)}")
         }
         2 -> {
-            println(sub(a, b))
+            println("SUBTRACAO = ${sub(a, b)}")
         }
         3 -> {
-            println(mult(a, b))
+            println("MULTIPLICACAO =  ${mult(a, b)}")
         }
         4 -> {
-            println(div(a, b))
+            println("DIVISAO = ${div(a, b)}")
         }
     }
+
+    println("Final")
 }
