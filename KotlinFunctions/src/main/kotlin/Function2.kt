@@ -7,5 +7,5 @@ fun somar (a : Int, b : Int) : Int{
 fun main() {
 
     println("A SOMA E IGUAL = ${somar(2, 4)}")
-    
+
 }
