@@ -24,14 +24,17 @@ fun main() {
 
     val reader = Scanner(System.`in`)
 
-    println("--------------------------")
-    println("Bem Vindo a Caculadora")
-    println("Digite a sua opcao")
-    println("[ 1 ] Soma")
-    println("[ 2 ] Subtracao")
-    println("[ 3 ] Multiplicacao")
-    println("[ 4 ] Divisao")
-    println("--------------------------")
+    println("""
+        Bem vindo a calculadora em Kotlin
+        Escolha a sua opcao
+        ---------------------------
+        [ 1 ] SOMA
+        [ 2 ] SUBTRACAO
+        [ 3 ] MULTIPLICACAO
+        [ 4 ] DIVISAO
+        ---------------------------
+    """.trimIndent())
+    
     val opt : Int = reader.nextInt()
     print("Escolha o valor de a: ")
     var a = reader.nextDouble()
